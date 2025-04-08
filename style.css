@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  letter-spacing: 1px;
+}
+body {
+  background: url(./img/moon.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; 
+}
+.container {
+  width: 80vmin;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+.title {
+  color: #162938;
+  font-size: 25px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.stats {
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  border-top: 1px solid #162938;
+  border-bottom: 1px solid #162938;
+  color: #162938;
+  padding: 10px;
+}
+.stats span {
+  margin-right: 20px;
+  font-weight: 600;
+  color: #162938;
+}
+#quote {
+  text-align: justify;
+  margin: 30px 0 30px 0;
+  user-select: none;
+}
+#quote-input {
+  resize: none;
+  width: 100%;
+  border-radius: 5px;
+  padding: 10px 5px;
+  border: 2px solid #162938;
+  outline: none;
+  font-size: 16px;
+}
+button {
+  float: right;
+  margin-top: 20px;
+  background: #162938;
+  color: #fff;
+  border: none;
+  padding: 10px 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: 0.2s;
+}
+button:hover {
+  transition: scale(0.8);
+}
+.results {
+  margin-top: 40px;
+  display: none;
+}
+.results h3 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #162938;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+.wrapper p {
+  display: flex;
+  flex-direction: column;
+  color: #162938;
+}
+.wrapper span {
+  margin-top: 10px;
+  font-weight: 600;
+  color: #162938;
+}
+.pass {
+  color: white;
+}
+.fail {
+  color: #e81c4e;
+}
