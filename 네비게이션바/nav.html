@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>네비 바</title>
+  <link rel="stylesheet" href="./nav.css">
+</head>
+<body>
+  <nav>
+    <ul class="sidebar">
+      <li onclick="hideSidebar()"><a href="#"><img src="./img/Close.svg" alt=""></a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Products</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Forum</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+    <ul>
+      <li><a href="#">Coding2go</a></li>
+      <li class="hideOnMobile"><a href="#">Blog</a></li>
+      <li class="hideOnMobile"><a href="#">Products</a></li>
+      <li class="hideOnMobile"><a href="#">About</a></li>
+      <li class="hideOnMobile"><a href="#">Forum</a></li>
+      <li class="hideOnMobile"><a href="#">Login</a></li>
+      <li onclick="showSidebar()" class="menu-button"><a href="#"><img src="./img/Menu.svg" alt=""></a></li>
+    </ul>
+  </nav>
+
+  <script>
+    function showSidebar() {
+      const sidebar = document.querySelector(".sidebar")
+      sidebar.style.display = "flex"
+    }
+    function hideSidebar() {
+      const sidebar = document.querySelector(".sidebar")
+      sidebar.style.display = "none"
+    }
+  </script>
+</body>
+</html>
